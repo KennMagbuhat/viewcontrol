@@ -53,9 +53,9 @@ sap.ui.define(['sap/m/MessageToast','sap/ui/core/mvc/Controller'],
         },
         onPressCheckout: function (){
             var oInputFNameValue = this.getView().byId("idInptFName").getValue();
-            var oInputLNameValue = this.getView().byId("oidLblLName").getValue();
+            var oInputLNameValue = this.getView().byId("idInptLName").getValue();
             // Check if first name is blank
-            if (oInputFNameValue === "" && oInputLNameValue === ""){
+            if (oInputFNameValue === "" || oInputLNameValue === ""){
                 sap.m.MessageToast.show("Required Field is blank"); 
             }
         },

@@ -13,25 +13,25 @@
                 labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" 
                 emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
                     <f:content>
-                        <Label id="idLblFName" text="First Name" />
+                        <Label id="idLblFName" text="{i18n>firstNameLbl}" />
                         <Input id="idInptFName" value="" />
-                        <Label id="idLblLName" text="Last Name" />
+                        <Label id="idLblLName" text="{i18n>lastNameLbl}" />
                         <Input id="idInptLName" value="" />
-                        <Label id="idLblMOP" text="Mode of Payment" />
+                        <Label id="idLblMOP" text="{i18n>mopLbl}" />
                         <Select id="idSelMOP" forceSelection="false" change="onChangeMOP">
                             <items>
-                                <core:Item id="idItmCOD" text="Cash on Delivery" key="COD"/>
-                                <core:Item id="idItmCC" text="Credit Card" key="CC"/>
-                                <core:Item id="idItmGCash" text="GCash" key="GCASH"/>
+                                <core:Item id="idItmCOD" text="{i18n>codLbl}" key="COD"/>
+                                <core:Item id="idItmCC" text="{i18n>ccLbl}" key="CC"/>
+                                <core:Item id="idItmGCash" text="{i18n>gCashLbl}" key="GCASH"/>
                             </items>
                         </Select>
-                            <Label id="idLblPhone" text="Mobile Number" visible="false"/>
+                            <Label id="idLblPhone" text="{i18n>mobileNumLbl}" visible="false"/>
                             <Input id="idInputPhone" value="" visible="false"/>
-                            <Label id="idCrdNum" text="Credit Card Number" visible="false"/>
+                            <Label id="idCrdNum" text="{i18n>ccNumLbl}" visible="false"/>
                             <Input id="idInputCrdNum" value="" visible="false"/>
-                            <Label id="idValidDate" text="Validity Date" visible="false"/>
+                            <Label id="idValidDate" text="{i18n>validDateLbl}" visible="false"/>
                             <Input id="idInputValidDate" value="" visible="false"/>
-                            <Label id="idCVV" text="CVV" visible="false"/>
+                            <Label id="idCVV" text="{i18n>cvvLbl}" visible="false"/>
                             <Input id="idInputCVV" value="" visible="false"/>
                     </f:content>
                 </f:SimpleForm>
@@ -40,7 +40,7 @@
                     <headerToolbar>
                         <OverflowToolbar id="idOFT">
                             <content>
-                                <Title id="idTableTitleSCart" text="Shopping Cart"/>
+                                <Title id="idTableTitleSCart" text="{i18n>shopCartLbl}"/>
                                 <ToolbarSpacer id="idTSpacer"/>
                                 <Button id="idBtnAddItems" icon="sap-icon://cart-4" tooltip="Add to Cart" press="onAddItem"/>
                             </content>
@@ -48,13 +48,13 @@
                     </headerToolbar>
                     <columns>
                         <Column id="idCol1">
-                            <Text id="idColText1" text="Item" />
+                            <Text id="idColText1" text="{i18n>itemtLbl}" />
                         </Column>
                         <Column id="idCol2">
-                            <Text id="idColText2" text="Quantity" />
+                            <Text id="idColText2" text="{i18n>quantityLbl}" />
                         </Column>
                         <Column id="idCol3">
-                            <Text id="idColText3" text="Price" />
+                            <Text id="idColText3" text="{i18n>priceLbl}" />
                         </Column>
                     </columns>
                     <items>
@@ -82,7 +82,7 @@
             <OverflowToolbar id="idOFTFooter">
             
                 <ToolbarSpacer id="idTSpacerFooter"/>
-                <Button id="idBtnCheckout" text="Check Out" tooltip="Check Out" press="onPressCheckout"/>
+                <Button id="idBtnCheckout" text="{i18n>checkOutLbl}" tooltip="Check Out" press="onPressCheckout"/>
             </OverflowToolbar>
             </footer>
 
